@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+
+    <RelativeLayout
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/inner_frame_layout_padding"
+        app:layout_boxedEdges="none">
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_semi_transparent"
+            tools:text="12:00" />
+
+        <ImageView
+            android:id="@+id/image_view_flashlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:contentDescription="flashlight icon"
+            android:src="@drawable/ic_baseline_flash_on_24" />
+
+        <ImageView
+            android:id="@+id/image_view_flashlight_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:contentDescription="flashlight icon"
+            android:src="@drawable/ic_baseline_flash_off_24"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/button_normal_flashlight"
+            style="@android:style/Widget.Material.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:background="@color/color_semi_transparent"
+            android:text="Normal"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_red_flashlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:background="@color/color_semi_transparent"
+            android:text="Red"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_view_button_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</androidx.wear.widget.BoxInsetLayout>
