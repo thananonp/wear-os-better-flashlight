@@ -26,14 +26,10 @@ class MainActivity : Activity() {
             setBackgroundColor(Color.RED)
             isRedFlashlightOn = true
             isNormalFlashlightOn = false
-            binding.imageViewFlashlight.visibility = View.GONE
-            binding.imageViewFlashlightOff.visibility = View.VISIBLE
         } else {
             setBackgroundColor(Color.BLACK)
             isRedFlashlightOn = false
             isNormalFlashlightOn = false
-            binding.imageViewFlashlight.visibility = View.VISIBLE
-            binding.imageViewFlashlightOff.visibility = View.GONE
         }
     }
 
@@ -42,14 +38,10 @@ class MainActivity : Activity() {
             setBackgroundColor(Color.WHITE)
             isNormalFlashlightOn = true
             isRedFlashlightOn = false
-            binding.imageViewFlashlight.visibility = View.GONE
-            binding.imageViewFlashlightOff.visibility = View.VISIBLE
         } else {
             setBackgroundColor(Color.BLACK)
             isRedFlashlightOn = false
             isNormalFlashlightOn = false
-            binding.imageViewFlashlight.visibility = View.VISIBLE
-            binding.imageViewFlashlightOff.visibility = View.GONE
         }
     }
 
@@ -91,8 +83,6 @@ class MainActivity : Activity() {
                 setBackgroundColor(Color.BLACK)
                 isRedFlashlightOn = false
                 isNormalFlashlightOn = false
-                binding.imageViewFlashlight.visibility = View.VISIBLE
-                binding.imageViewFlashlightOff.visibility = View.INVISIBLE
             }
 
         }
