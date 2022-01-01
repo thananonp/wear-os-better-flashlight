@@ -7,4 +7,5 @@
     <string name="hello_world">Hello Square World!</string>
     <string name="white">#FFF</string>
     <string name="red">#F00</string>
+    <string name="set_default_brightness">💾☀️</string>
 </resources>
