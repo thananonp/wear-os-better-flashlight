@@ -10,6 +10,7 @@ import android.provider.Settings
 import android.view.KeyEvent
 import android.view.MotionEvent
 import android.view.ViewConfiguration
+import android.view.WindowManager
 import android.widget.Toast
 import androidx.core.view.InputDeviceCompat
 import androidx.core.view.MotionEventCompat
@@ -94,7 +95,7 @@ class MainActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
         binding = ActivityMainBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
